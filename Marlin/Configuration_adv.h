@@ -2439,7 +2439,7 @@
    * Define you own with
    * { <off_time[1..15]>, <hysteresis_end[-3..12]>, hysteresis_start[1..8] }
    */
-  #define CHOPPER_TIMING CHOPPER_DEFAULT_24V  //jp
+  #define CHOPPER_TIMING CHOPPER_PRUSAMK3_24V  //jp
 
   /**
    * Monitor Trinamic drivers
@@ -2513,7 +2513,7 @@
 
   #if EITHER(SENSORLESS_HOMING, SENSORLESS_PROBING)
     // TMC2209: 0...255. TMC2130: -64...63
-    #define X_STALL_SENSITIVITY  180  //jp
+    #define X_STALL_SENSITIVITY  158  //jp 180
     //#define X2_STALL_SENSITIVITY X_STALL_SENSITIVITY  //jp
     #define Y_STALL_SENSITIVITY  148  //jp
     //#define Y2_STALL_SENSITIVITY Y_STALL_SENSITIVITY  //jp
